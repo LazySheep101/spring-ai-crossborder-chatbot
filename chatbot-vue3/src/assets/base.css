@@ -1,0 +1,48 @@
+/* 视觉对齐原版 OmniMerchant 跨境客服前端 */
+:root {
+  --xz-primary: #1677ff;
+  --xz-primary-soft: #f0f5ff;
+  --xz-primary-hover: #4096ff;
+  --xz-text: #182230;
+  --xz-muted: #667085;
+  --xz-subtle: #98a2b3;
+  --xz-border: #e4e9f0;
+  --xz-surface: #ffffff;
+  --xz-page: #f3f6fb;
+  --xz-sidebar: #0d1728;
+  --xz-sidebar-active: #19345f;
+  --xz-shadow: 0 1px 2px rgba(16, 24, 40, 0.03);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  min-height: 100%;
+  margin: 0;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans SC", "Noto Sans", sans-serif;
+  color: var(--xz-text);
+  background: var(--xz-page);
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd3df;
+  border-radius: 4px;
+}

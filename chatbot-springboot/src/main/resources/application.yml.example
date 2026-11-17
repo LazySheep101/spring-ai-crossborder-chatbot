@@ -1,0 +1,40 @@
+server:
+  port: 8081
+
+spring:
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+logging:
+  config: classpath:log4j2.xml
+
+rag:
+  splitter:
+    enabled: true
+    chunk-size: 800
+    min-chunk-size-chars: 350
+  hybrid:
+    enabled: true
+    candidate-top-k: 10
+    final-top-k: 5
+    rrf-k: 60
+  rerank:
+    enabled: true
+    model: qwen3-rerank
+    api-url: ""
+    api-key: ""
+    candidate-top-k: 20
+    score-threshold: 0.0
+    max-document-chars: 4000
+    instruct: "Given a web search query, retrieve relevant passages that answer the query."
+  agent:
+    enabled: true
+
+admin:
+  jwt:
+    secret: your_admin_jwt_secret
+    ttl-hours: 168
