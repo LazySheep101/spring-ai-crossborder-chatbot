@@ -1,9 +1,9 @@
-# spring-ai-crossborder-chatbot · 电商客服 Agent 改造说明
+﻿# spring-ai-crossborder-chatbot · 电商客服 Agent 改造说明
 
 > 状态：计划内改造已完成（底座 RAG 保留，叠加业务 Tool Agent + 简易后台；待本机 JDK21 + PG 联调验收）  
 > 项目名称：`spring-ai-crossborder-chatbot` · Author：`lazysheep101`  
 > 文档位置：`spring-ai-crossborder-chatbot/docs/电商客服Agent改造说明.md`  
-> **每次修改先参考**：`view-work/spring-ai-crossborder-customer-service`（OmniMerchant，只读；上游 [spring-ai-crossborder-customer-service](https://github.com/RyanCoreAI/spring-ai-crossborder-customer-service)）
+> **每次修改先参考**：OmniMerchant 类客服参考实现（只读；上游可参考 [spring-ai-crossborder-customer-service](https://github.com/RyanCoreAI/spring-ai-crossborder-customer-service)）
 
 下文记录的是已经落地的边界。以后改 Tool、审批、分流、转人工或商家后台，仍然先打开该参考仓看同一类能力怎么做，再改本仓。
 
@@ -216,3 +216,4 @@ System Prompt 默认可在 `RagProperties.Agent.systemPrompt` / 配置覆盖，�
 |------|------|
 | 2026-10-29 | 初版：确认此前无改造 MD；按已落地代码与敲定边界补写本文 |
 | 2026-11-17 | 产品名统一为小智AI；补会话/评测/工作流/审计/账号/多语言页与后台知识库上传 |
+
